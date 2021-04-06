@@ -1,1 +1,1 @@
-# favicon
+# Favicon
