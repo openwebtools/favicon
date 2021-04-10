@@ -1,22 +1,19 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Head from "next/head";
 import Footer from "./Footer";
 import Toolbar from "./Toolbar";
 import { Box, Flex } from "@chakra-ui/react";
 
-type Props = {
-  children?: ReactNode;
-  title?: string;
-};
-
-const Layout = ({ children, title }: Props) => {
+const Layout = ({ children, title, ...rest }: any) => {
   return (
     <Flex direction="column" h="100%">
       <Head>
         <title>{title}</title>
       </Head>
       <Toolbar />
-      <Box flex="1">{children}</Box>
+      <Box flex="1" {...rest}>
+        {children}
+      </Box>
       <Footer />
     </Flex>
   );

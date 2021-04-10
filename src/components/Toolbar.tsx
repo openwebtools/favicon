@@ -51,7 +51,7 @@ const Toolbar = (props: any) => {
           aria-label="Open Menu"
           display={{ base: "block", md: "none" }}
           icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-          variant="ghost"
+          variant="outline"
         />
       </Flex>
 
