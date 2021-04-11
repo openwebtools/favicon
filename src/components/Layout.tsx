@@ -11,9 +11,9 @@ const Layout = ({ children, title, ...rest }: any) => {
         <title>{title}</title>
       </Head>
       <Toolbar />
-      <Box flex="1" {...rest}>
+      <Flex flex="1" {...rest}>
         {children}
-      </Box>
+      </Flex>
       <Footer />
     </Flex>
   );

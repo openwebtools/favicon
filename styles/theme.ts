@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import { Dotted } from "./component/dotted";
 
 const config = {
   initialColorMode: "system" as const,
@@ -20,10 +21,17 @@ const theme = extendTheme({
     white: "#fbfbff",
     black: "#1c1c1e",
     dark: {
+      200: "black",
       500: "black",
     },
     light: {
+      200: "white",
       500: "white",
+    },
+  },
+  layerStyles: {
+    dotted: {
+      ...Dotted,
     },
   },
   shadows: {},
